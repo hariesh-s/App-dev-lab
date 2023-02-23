@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form>
+      <label for="radius">Radius</label>
+      <input type="text" name="radius" id="radius">
+      <button type="submit" id="submit-btn"> Submit </button>
+   </form>
+   <p id="area"></p>
+   <p id="volume"></p>
+   <script>
+      const form = document.querySelector("form");
+      const user_input = document.querySelector("#radius")
+      const area_txt = document.querySelector("#area");
+      const vol_txt = document.querySelector("#volume")
+      console.log("hello")
+
+      function Sphere_Volume(radius) {
+         return radius * radius * radius;
+      }
+
+      function Circle_Area(radius) {
+         return radius * radius;
+      }
+
+      form.addEventListener("submit", (e) => {
+         e.preventDefault();
+         const radius = user_input.value;
+         const volume = Sphere_Volume(radius);
+         const area = Circle_Area(radius);
+
+         area_txt.innerHTML = "area = " + area;
+         vol_txt.innerHTML = "volume = " + volume;
+      })
+   </script>
+</body>
+</html>
