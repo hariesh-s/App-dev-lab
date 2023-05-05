@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <h3>
+      Add Patient
+      <form action="addPatient.php" method="post">
+        <label for="">Name:</label>
+        <input type="text" name="name" />
+        <br />
+        <label for="">Date of Birth:</label>
+        <input type="date" name="dob" />
+        <br />
+        <label for="">Contact No:</label>
+        <input type="text" name="contact" />
+        <br />
+        <label for="">Department:</label>
+        <input type="text" name="dept" />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </h3>
+    <h3>
+      Add Diagnosis
+      <form action="addDiagnosis.php" method="post">
+        <label for="">Name:</label>
+        <input type="text" name="diagnosis" />
+        <br />
+        <label for="">Medication:</label>
+        <input type="text" name="medication" />
+        <br />
+        <label for="">Department:</label>
+        <input type="text" name="dept" />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </h3>
+
+    <h3>
+      Add Treatment
+      <form action="addTreatment.php" method="post">
+        <label for="">Patient ID:</label>
+        <input type="number" name="patientID" />
+        <br />
+        <label for="">Type:</label>
+        <input type="text" name="type" />
+        <br />
+        <label for="">Diagnosis ID:</label>
+        <input type="number" name="diagID" />
+        <br />
+        <label for="">Doctor:</label>
+        <input type="text" name="doctor" />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </h3>
+
+    <h3>
+      Delete Patient
+      <form action="deletePatient.php" method="post">
+        <label for="">Patient Name:</label>
+        <input type="text" name="pname" />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </h3>
+
+    <h3>
+      Update Patient
+      <form action="updatePatient.php" method="post">
+        <label for="">Name:</label>
+        <input type="text" name="name" />
+        <br />
+        <label for="">Date of Birth:</label>
+        <input type="date" name="dob" />
+        <br />
+        <label for="">Contact No:</label>
+        <input type="text" name="contact" />
+        <br />
+        <label for="">Department:</label>
+        <input type="text" name="dept" />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </h3>
+  </body>
+</html>
